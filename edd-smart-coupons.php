@@ -9,7 +9,7 @@
  * Author URI: https://fatcatapps.com/
  */
 
-define( 'EDD_SMART_COUPONS_ARGUMENT', 'show_coupon' );
+define( 'EDD_SMART_COUPONS_ARGUMENT', 'discount' );
 define( 'EDD_SMART_COUPONS_COOKIE', 'edd_smart_coupons_enabled' );
 define( 'EDD_SMART_COUPONS_EXPIRE', time() + ( 60 * 60 * 24 * 365 ) ); // now + 1 year
 
