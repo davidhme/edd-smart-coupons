@@ -15,9 +15,8 @@ define( 'EDD_SMART_COUPONS_EXPIRE', time() + ( 60 * 60 * 24 * 365 ) ); // now + 
 
 function edd_smart_coupons_request() {
 	if ( ! empty( $_REQUEST[ EDD_SMART_COUPONS_ARGUMENT ] ) && empty( $_COOKIE[ EDD_SMART_COUPONS_COOKIE ] ) ) {
+		$_COOKIE[ EDD_SMART_COUPONS_COOKIE ] = true;
 		setcookie( EDD_SMART_COUPONS_COOKIE, true, EDD_SMART_COUPONS_EXPIRE );
-		wp_redirect( remove_query_arg( EDD_SMART_COUPONS_ARGUMENT ) );
-		exit;
 	}
 }
 
